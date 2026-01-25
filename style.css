@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -14,75 +14,80 @@ header{
     width: 100%;
 }
 
-.header-up, .header-down{
+.header-up,
+.header-down {
     max-width: 1536px;
 }
 
-.header-up{
+.header-up {
     gap: 24px;
     display: flex;
     justify-content: space-between;
 }
 
-.header-up__left--icon{
+.header-up__left--icon {
     display: flex;
     align-items: center;
     gap: 4px;
 }
 
-.header-up__left--img{
+.header-up__left--img {
     width: 50px;
     height: 74px;
 }
 
-.header-up__right{
+.header-up__right {
     display: flex;
     flex-direction: row;
 }
 
-.burger{
+.burger {
     width: 24px;
     height: 16px;
     display: none;
 }
 
-.header-up__right-phone{
+.header-up__right-phone {
     padding-left: 12px;
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.header-down{
+.header-down {
     display: flex;
     justify-content: space-between;
 }
 
-.header-down__menu--left{
+.header-down__menu--left {
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
 
-.text{
+.text {
     font: normal 400 16px/24px sans-serif;
     letter-spacing: 0;
     color: #111827;
 }
 
-.text-2xl{
+.text-2xl {
     letter-spacing: 0;
     font-size: 24px;
     line-height: 32px;
     color: #111827;
 }
 
-.text-light{
+.text-light {
     font-weight: 300;
 }
 
-.text-right{
+.text-row {
+    display: none;
+}
+
+.text-right {
     text-align: right;
     padding-right: 12px;
     border-right: 1px #A78BFA solid;
@@ -96,27 +101,27 @@ header{
     border-radius: 4px;
 }
 
-.text-basic{
+.text-basic {
     font-weight: 700;
 }
 
-.text-bold{
+.text-bold {
     font-weight: 900;
 }
 
-.text-xl{
+.text-xl {
     font-size: 20px;
     line-height: 28px;
 }
 
-.text-4xl{
+.text-4xl {
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0;
     color: #111827;
 }
 
-.header-down__menu--left li:hover{
+.header-down__menu--left li:hover {
     color: #A78BFA;
     text-decoration-line: underline;
     text-decoration-style: dashed;
@@ -129,7 +134,8 @@ header{
         padding: 24px 256px;
     }
 
-    .header-up, .header-down {
+    .header-up,
+    .header-down {
         width: 100%;
     }
 
@@ -138,7 +144,7 @@ header{
         gap: 24px;
     }
 
-    .header-up__right > p {
+    .header-up__right>p {
         max-width: 420px;
         font-size: 16px;
         line-height: 24px;
@@ -159,15 +165,37 @@ header{
     }
 }
 
-@media (max-width: 1536px){
-    header{
+@media (max-width: 1060px) {
+    header {
         padding: 24px 128px;
         gap: 12px;
     }
 
-    .header-down{
-        border-bottom: 1px #A78BFA solid;;
-        border-top: 1px #A78BFA solid ;
+    .header-up__right>p {
+        display: none;
+    }
+
+    .text-row {
+        display: flex;
+        font-size: 14px;
+        line-height: 20px;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
+        flex-direction: row;
+        padding: 4px;
+        gap: 8px;
+    }
+
+    .text-row span {
+        text-align: center;
+        flex: 1;
+    }
+
+    .header-down {
+        border-bottom: 1px #A78BFA solid;
+        ;
+        border-top: 1px #A78BFA solid;
         display: flex;
         justify-content: space-between;
         padding-top: 12px;
@@ -175,10 +203,14 @@ header{
     }
 }
 
-@media (max-width: 758px) {
+@media (max-width: 770px) {
     header {
         padding: 8px 60px;
         justify-content: center;
+    }
+
+    .text-row {
+        display: none;
     }
 
     .header-up {
@@ -193,14 +225,14 @@ header{
 
     .header-up__left--icon h1 {
         font-size: 18px;
-        line-height: 24px;
+        line-height: 28px;
     }
 
     .header-up__right {
         align-items: center;
     }
 
-    .header-up__right > p {
+    .header-up__right>p {
         display: none;
     }
 
@@ -212,8 +244,8 @@ header{
     }
 
     .header-up__right-phone--up h1 {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 28px;
         white-space: nowrap;
     }
 
