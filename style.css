@@ -66,6 +66,41 @@ header {
     gap: 24px;
 }
 
+.delivery-block__left, .delivery-block__right{
+    width: 756px;
+    flex: 1;
+}
+
+.delivery-block__left>img{
+    height: 352px;
+    border-radius: 16px;
+    transform: scaleX(-1);
+    object-fit: cover;
+}
+
+.delivery-block__left>h1{
+    text-align: left;
+}
+
+.delivery-block__left>p{
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+
+.delivery-block__left{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.delivery-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 72px 192px;
+    gap: 24px;
+}
+
 .text {
     font: normal 400 16px/24px sans-serif;
     letter-spacing: 0;
