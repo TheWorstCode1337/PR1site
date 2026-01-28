@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'Formular', sans-serif;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 body {
@@ -68,7 +67,7 @@ main {
     display: none;
 }
 
-.header-up__right-phone {
+.header-up__right-phone, .footer-up__right-phone {
     padding-left: 12px;
     display: flex;
     flex-direction: column;
@@ -431,6 +430,10 @@ textarea {
     font-weight: 700;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .text-bold {
     font-weight: 900;
 }
@@ -449,7 +452,6 @@ textarea {
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0;
-    color: #111827;
 }
 
 .header-down__menu--left li:hover {
