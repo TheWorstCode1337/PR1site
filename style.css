@@ -17,6 +17,7 @@ header {
     background-color: #F9FAFB;
     padding: 24px 192px;
     width: 100%;
+    align-items: center;
 }
 
 main {
@@ -336,6 +337,7 @@ footer {
     color: #F9FAFB;
     display: flex;
     padding: 40px 192px;
+    width: 100%;
     gap: 24px;
     flex-direction: column;
     background-color: #111827;
@@ -487,7 +489,20 @@ textarea {
     text-decoration-style: dashed;
 }
 
+.footer-down--text__left p{
+    width: 100%;
+    max-width: 1146px;
+}
+
 @media (max-width: 1536px) {
+
+    header{
+        padding: 24px 256px;
+    }
+
+    .header-up, .header-down{
+        max-width: 1026px;
+    }
 
     main {
         display: flex;
@@ -533,9 +548,14 @@ textarea {
         flex-shrink: 0;
     }
 
-    .delivery-block__left h1 {
+    .delivery-block__left h1, .header-up__right-phone--up h1{
         font-size: 30px;
         line-height: 36px;
+    }
+
+    .header-up__right-phone-down p{
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .delivery-block__left,
@@ -598,6 +618,10 @@ textarea {
     .contact{
         padding: 64px;
         max-width: 1026px;
+    }
+
+    .footer-down--text__left p{
+        max-width: 895px;
     }
 }
 
