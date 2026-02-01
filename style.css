@@ -813,4 +813,36 @@ textarea {
     .header-down {
         display: none;
     }
+
+    main {
+        padding: 40px 59px;
+    }
+
+    .delivery-block__left--text h1 {
+        word-break: 3px;
+    }
+
+    .delivery-block__left--text p {
+        letter-spacing: 0.02rem;
+    }
+
+    .advantage-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .guarantees--galary {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-up {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-up__left {
+        align-items: center;
+    }
 }
